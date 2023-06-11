@@ -1,0 +1,95 @@
+.headline {
+  font-size: 25px;
+  color: rgb(26, 5, 5);
+  text-align: center;
+  background-color: #4be60e;
+  padding: 12px;
+}
+body {
+  margin: 0;
+  background-position: center center;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url(./istockphoto-1225639749-612x612.jpg);p
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#thezip,
+#thefeelings,
+#thegenerate {
+  background: #8bf00766;
+  margin: 60px auto 0px;
+  outline: none;
+  width: 30%;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  height: 39px;
+  display: block;
+  color: rgb(6, 14, 13);
+  resize: none;
+  font-size: 15px;
+}
+#thezip::placeholder,
+#thefeelings::placeholder {
+  font-family: sans-serif;
+  color: rgb(17, 9, 9);
+  line-height: 30px;
+}
+#thefeelings {
+  margin-top: 0;
+}
+#theerror {
+  background-color: #e91e63;
+  color: white;
+  width: 25%;
+  font-size: large;
+  border-radius: 1px 1px 29px 30px;
+  margin: 0px auto 13px;
+  text-align: center;
+  display: block;
+}
+
+#theentry {
+  width: 51%;
+  font-size: 20px;
+  border-radius: 11px;
+  margin: 50px auto;
+  border-radius: 11px;
+  opacity: 0;
+  height: 300px;
+  transition: all 3s ease;
+}
+#thegenerate {
+  width: 21%;
+  background: #2edd0b;
+  cursor: pointer;
+  margin-top: 19px;
+}
+#theentryHolder {
+  background: #25df08;
+
+  width: 110%;
+  font-size: 1.5 vw;
+  height: 80%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 20% 20% 10%;
+  text-align: center;
+}
+
+.title {
+  padding: 11px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#thetemp,
+#thecity {
+  font-size: 2.5vw;
+}
+#thecontent {
+  grid-column: 1 / -1;
+}

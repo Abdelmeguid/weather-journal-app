@@ -1,0 +1,9 @@
+first, you have to open the project folder via vscode, not the node js program folder.
+then make the package.json file using this command npm init -y.
+then install the required packages like this:
+npm install express body-parser cors.
+finally, run the application using this command node server.js.
+note: in youtube i saw the engineer use the below command to prevent down and up the server during the update
+npm i nodemon --save-dev
+
+discuss of jison files..you will find it in word file
