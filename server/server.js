@@ -25,6 +25,19 @@ const OurHostname = "127.0.0.1";
 const listening = function () {
   console.log(`my server work wellat http://${OurHostname}:${OurPort}/`);
 };
+
+///i add belwo lines for deployment //////////////////////////////////
+const __dirname = path.resolve();
+app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static(path.join(__dirname, "/client/build")));
+
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  );
+}
+///////////////////////////////////////////////////////////////////
 //to test our server
 let d = new Date();
 let newDate = d.toDateString();
